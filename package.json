@@ -1,0 +1,25 @@
+{
+  "name": "banking-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test",
+    "report": "npx playwright show-report"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YlberPllana/Banking-Project.git"
+  },
+  "keywords": [],
+  "author": "Ylber Pllana", 
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YlberPllana/Banking-Project/issues"
+  },
+  "homepage": "https://github.com/YlberPllana/Banking-Project#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.62.1",
+    "@types/node": "^26.2.0"
+  }
+}
