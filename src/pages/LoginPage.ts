@@ -10,8 +10,11 @@ export class LoginPage extends BasePage {
             name: 'Customer Login',
         });
 
-    private readonly customerDropdown: Locator =
+    public readonly customerDropdown: Locator =
         this.page.locator('#userSelect');
+
+    public readonly yourNameLabel: Locator =
+        this.page.locator('.form-group label');
 
     private readonly loginButton: Locator =
         this.page.getByRole('button', {

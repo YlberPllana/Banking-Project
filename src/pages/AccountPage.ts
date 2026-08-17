@@ -82,6 +82,16 @@ export class AccountPage extends BasePage {
 
     //#endregion
 
+    //#region Logout Locators
+
+    public readonly logoutButton: Locator =
+        this.page.getByRole('button', {
+            name: 'Logout',
+            exact: true,
+        });
+
+    //#endregion
+
     //#region Account Methods
 
     public async getAccountBalance(): Promise<number> {
@@ -151,5 +161,16 @@ export class AccountPage extends BasePage {
             hasText: amount.toString(),
         });
     }
+
+     //#endregion
+
+    // #region Logout Methods
+
+    public async clickLogoutButton(): Promise<void>{
+        await this.clickElement(this.logoutButton);
+    }
+
+     //#endregion
+
 }
 //#endregion
